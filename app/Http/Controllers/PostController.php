@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
+use App\Http\Resources\PostResource;
 use App\Models\Post;
 
 class PostController extends Controller
@@ -13,7 +14,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return PostResource::collection(Post::all());
     }
 
     /**
@@ -21,7 +22,8 @@ class PostController extends Controller
      */
     public function store(StorePostRequest $request)
     {
-        //
+        $post = Post::create($request->validated());
+        return new PostResource($post);
     }
 
     /**
