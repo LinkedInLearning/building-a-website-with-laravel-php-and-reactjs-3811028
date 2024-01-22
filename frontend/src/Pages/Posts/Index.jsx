@@ -6,7 +6,7 @@ export function Index() {
 
     useEffect(() => {
         axios
-            .get("https://jsonplaceholder.typicode.com/posts")
+            .get("http://linkedin-blog.test/api/posts")
             .then((response) => {
                 setPosts(response.data);
             })
@@ -24,6 +24,7 @@ export function Index() {
                         className="p-5 my-5 border rounded-md shadow-sm text-left"
                     >
                         <h2 className="mb-5 font-bold">{post.title}</h2>
+                        <p className="font-bold">{post.author}</p>
 
                         <p>{post.body}</p>
                     </div>
