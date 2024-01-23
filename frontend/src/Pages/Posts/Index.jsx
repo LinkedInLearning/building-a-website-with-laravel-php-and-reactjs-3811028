@@ -16,6 +16,26 @@ export function Index() {
             });
     }, []);
 
+    const handleDeletePost = async (postId) => {
+        const shouldDelete = window.confirm(
+            "Are you sure you want to delete this post?"
+        );
+
+        if (!shouldDelete) {
+            return;
+        }
+
+        try {
+            await axios.delete(`http://linkedin-blog.test/api/posts/${postId}`);
+
+            setPosts((prevPosts) =>
+                prevPosts.filter((post) => post.id !== postId)
+            );
+        } catch (error) {
+            console.error("Error deleting post:", error);
+        }
+    };
+
     return (
         <div>
             <div className="flex">
@@ -50,7 +70,10 @@ export function Index() {
                                     Edit Post
                                 </Link>
 
-                                <button className="px-4 py-2 text-white bg-gray-400 rounded-md hover:bg-gray-500">
+                                <button
+                                    onClick={() => handleDeletePost(post.id)}
+                                    className="px-4 py-2 text-white bg-gray-400 rounded-md hover:bg-gray-500"
+                                >
                                     Delete Post
                                 </button>
                             </div>
