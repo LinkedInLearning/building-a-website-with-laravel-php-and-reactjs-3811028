@@ -56,7 +56,12 @@ export function Index() {
                             key={post.id}
                             className="p-5 my-5 text-left border rounded-md shadow-sm"
                         >
-                            <h2 className="mb-5 font-bold">{post.title}</h2>
+                            <Link to={`/posts/${post.id}`} state={post}>
+                                <h2 className="py-3 mb-5 font-bold hover:underline">
+                                    {post.title}
+                                </h2>
+                            </Link>
+
                             <p className="font-bold">{post.author}</p>
 
                             <p>{post.body}</p>
