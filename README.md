@@ -25,7 +25,7 @@ To resolve this issue:
 	- Laravel
 	- Laravel Valet
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. For Chapter 3 exercise files, please use the repository: [second-repo-url]
+3. For Chapter 3 exercise files, please use the repository: [building-a-website-with-laravel-php-and-reactjs-inertia][second-repo-url]
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
