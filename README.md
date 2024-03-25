@@ -1,6 +1,10 @@
 # Building a Website with Laravel, PHP, and React.js
 This is the repository for the LinkedIn Learning course `Building a Website with Laravel, PHP, and React.js`. The full course is available from [LinkedIn Learning][lil-course-url].
 
+![lil-thumbnail-url]
+
+Laravel is the most popular PHP framework, which should come as no surprise. It boasts an active user community and impressive ecosystem, making it the choice of many developers around the world. React, on the other hand, is a widely used front-end framework that’s maintained by Meta and a community of developers and companies. In this course, instructor Zuzana Kunckova shows you how to start leveraging these two technologies in tandem with Inertia to get better results and boost your career.</p><p>Learn how to build a blog by creating an API in Laravel, then building out a front end with React, before connecting the two frameworks to enable the flow of data between the front end and the back end. Zuzana demonstrates how to send data with Inertia, which offers many different server-side patterns and removes some of the complexity that comes with calling an API from React. Along the way, be sure to test out your new skills in the exercise challenges at the end of each section.
+
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
@@ -30,6 +34,6 @@ To resolve this issue:
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [second-repo-url]: https://github.com/LinkedInLearning/building-a-website-with-laravel-php-and-reactjs-inertia-3811028
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+[lil-course-url]: https://www.linkedin.com/learning/building-a-website-with-laravel-react-js-and-inertia/
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQH0U9RhFcnRJA/learning-public-crop_675_1200/0/1711144891773?e=2147483647&v=beta&t=C0x1I6T7vWPE80Ue_9sDnhLsGID_yzct7OhHEm3NUoo
 
